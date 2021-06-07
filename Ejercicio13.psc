@@ -6,6 +6,7 @@ Algoritmo Ejercicio13
 	Mientras opcion != 3 Hacer
 		
 		Si opcion = 1 Entonces
+			
 			Escribir "Ingresa un numero para sumar"
 			leer num1
 			
@@ -40,8 +41,18 @@ Algoritmo Ejercicio13
 				
 				Escribir "Ingresa 1 para sumar dos numeros, 2 para dividir dos numeros y 3 para salir"
 				leer opcion
+				
 			SiNo
 				
+				Si opcion <> 1 y opcion <> 2 y opcion <> 3 Entonces
+					
+					Escribir "Ingresa una opcion correcta"
+					Escribir "Ingresa 1 para sumar dos numeros, 2 para dividir dos numeros y 3 para salir"
+					leer opcion
+					
+				SiNo
+				
+				Fin Si
 			Fin Si
 			
 		Fin Si
